@@ -1,9 +1,17 @@
 export default class Calculator {
-  static sum(...numbers: number[]) {
-    return numbers.reduce((total, number) => total + number, 0);
+  static sum(n1: number, n2: number) {
+    return n1 + n2;
   }
 
-  static multiply(...numbers: number[]) {
-    return numbers.reduce((total, number) => total * number, 1);
+  static subtract(n1: number, n2: number) {
+    return n1 - n2;
+  }
+
+  static multiply(n1: number, n2: number) {
+    return n1 * n2;
+  }
+
+  static divide(n1: number, n2: number) {
+    return n1 / n2;
   }
 }
