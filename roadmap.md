@@ -25,6 +25,6 @@ Firstly, we are gonna test the methods of a class, in order to understand the ba
   - Refactor the component to be a functional component instead of a class-based one.
 
 - Show the exercises for the viewer to practice alone by pausing the video
-  - Test the multiply and the divide methods of the Calculator class.
+  - Test the subtract and the divide methods of the Calculator class.
   - Test the class StringUtils (toUpperCase and toLowerCase methods).
   - Show the solution of the exercises
