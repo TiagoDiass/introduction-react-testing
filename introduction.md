@@ -28,7 +28,25 @@ Tests make your software have more quality, and in Software development, the qua
 
 When speaking about tests, there are some different types that you might already have heard of.
 
-I'll speak a bit about them and show some key points.
+Basically,
+
+1. Unit tests:
+
+- Test one thing, alone, in isolation from the rest of the application.
+- Usually fast to run and easy to write.
+
+2. Integration tests:
+
+- Test a few things, TOGETHER.
+- Usually slower to run and more complex to write than unit tests.
+- Useful for identifying any issues that may arise when units are put combined.
+
+3. End-to-end (e2e):
+
+- Test that everything works together (run the app)
+- It usually runs the entire app, so it's slower than integration and unit tests.
+
+<!-- I'll speak a bit about them and show some key points.
 
 Unit tests:
 
@@ -44,4 +62,4 @@ Integration tests:
 - Integration tests are usually slower to run and more complex to write than unit tests.
 - Integration tests are useful for verifying that different units of code are working together correctly and for identifying any issues that may arise when the units are combined.
 
-In short: Both unit tests and integration tests are important for ensuring the quality and reliability of a software application. Unit tests can help identify problems at a smaller, more granular level, while integration tests can help identify problems that arise when different units of code are combined and work together as a system.
+In short: Both unit tests and integration tests are important for ensuring the quality and reliability of a software application. Unit tests can help identify problems at a smaller, more granular level, while integration tests can help identify problems that arise when different units of code are combined and work together as a system. -->
