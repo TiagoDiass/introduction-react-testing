@@ -10,9 +10,9 @@ Now, time has passed and your app has 10 features, and you are developing a new 
 
 So, to ensure that the other 10 features are working correctly, are you going to test them manually? I don't think so, right? Each feature in almost every software has a lot of edge cases, testing all of the 10 features of your app manually would take hours (probably more than just some hours).
 
-I have spoken of this scenario, to show you the reason why automated tests are great for ANY software. With automated tests, you write a feature, you write its tests, those tests ensure that the feature is working as expected, and if anyone adds some code that breaks that feature, the tests will automatically break and you will know.
+I have spoken of this scenario, to show you the reason why automated tests are great for ANY software product. With automated tests, you write a feature, you write its tests, those tests ensure that the feature is working as expected, and if anyone adds some code that breaks that feature, the tests will automatically break and you will know. That is, the tests helped you make reliable and functional code.
 
-After you add the tests, everytime you want, you can run them to ensure the feature is still working, and there are many situations where you want to run them to ensure everything is working, for example:
+After you adding tests to a codebase, everytime you want, you can run them to ensure that everything is still working, and there are many situations where you want to run them to ensure everything is working, for example:
 
 - Before a commit: Running the tests before committing your code can help ensure that the code you are committing does not break any existing functionality.
 
@@ -28,7 +28,8 @@ Tests make your software have more quality, and in Software development, the qua
 
 When speaking about tests, there are some different types that you might already have heard of.
 
-Basically,
+For now, lets focus on the more important tests for you assuming you are learning tests now.
+Basically, we'll speak about 2 types of tests:
 
 1. Unit tests:
 
@@ -40,11 +41,6 @@ Basically,
 - Test a few things, TOGETHER.
 - Usually slower to run and more complex to write than unit tests.
 - Useful for identifying any issues that may arise when units are put combined.
-
-3. End-to-end (e2e):
-
-- Test that everything works together (run the app)
-- It usually runs the entire app, so it's slower than integration and unit tests.
 
 <!-- I'll speak a bit about them and show some key points.
 
