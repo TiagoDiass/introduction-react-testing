@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import CalculatorClass from '../../calculator/Calculator';
 import './Calculator.css';
 
 type Operations = 'sum' | 'subtraction' | 'multiplication' | 'division';
@@ -29,28 +28,8 @@ export default function Calculator() {
   const [selectedOperation, setSelectedOperation] = useState<Operations>('sum');
   const [result, setResult] = useState<number | null>(null);
 
-  const clearNumbers = () => {
-    setNumber1('');
-    setNumber2('');
-  };
-
   const handleCalculate = () => {
-    const parsedNumber1 = parseInt(number1);
-    const parsedNumber2 = parseInt(number2);
-
-    const operations = {
-      sum: CalculatorClass.sum,
-      subtraction: CalculatorClass.subtract,
-      multiplication: CalculatorClass.multiply,
-      division: CalculatorClass.divide
-    };
-
-    const operationResult = operations[selectedOperation](
-      parsedNumber1,
-      parsedNumber2
-    );
-    setResult(operationResult);
-    clearNumbers();
+    console.log('you must implement the code of the calculation');
   };
 
   return (
@@ -77,11 +56,7 @@ export default function Calculator() {
         data-testid='operation-select'
       >
         {OperationsOptions.map((option) => (
-          <option
-            value={option.value}
-            key={option.value}
-            data-testid={`select-option-${option.value}`}
-          >
+          <option value={option.value} key={option.value}>
             {option.label}
           </option>
         ))}
