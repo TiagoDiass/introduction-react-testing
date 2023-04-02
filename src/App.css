@@ -4,3 +4,9 @@
   padding: 2rem;
   text-align: center;
 }
+
+.components {
+  display: flex;
+  justify-content: center;
+  column-gap: 4px;
+}
