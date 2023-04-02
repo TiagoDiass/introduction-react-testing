@@ -38,34 +38,26 @@ export default function Calculator() {
     const parsedNumber1 = parseInt(number1);
     const parsedNumber2 = parseInt(number2);
 
-    switch (selectedOperation) {
-      case 'sum': {
-        setResult(CalculatorClass.sum(parsedNumber1, parsedNumber2));
-        clearNumbers();
-        return;
-      }
-      case 'subtraction': {
-        setResult(CalculatorClass.subtract(parsedNumber1, parsedNumber2));
-        clearNumbers();
-        return;
-      }
-      case 'multiplication': {
-        setResult(CalculatorClass.multiply(parsedNumber1, parsedNumber2));
-        clearNumbers();
-        return;
-      }
-      case 'division': {
-        setResult(CalculatorClass.divide(parsedNumber1, parsedNumber2));
-        clearNumbers();
-        return;
-      }
-    }
+    const operations = {
+      sum: CalculatorClass.sum,
+      subtraction: CalculatorClass.subtract,
+      multiplication: CalculatorClass.multiply,
+      division: CalculatorClass.divide
+    };
+
+    const operationResult = operations[selectedOperation](
+      parsedNumber1,
+      parsedNumber2
+    );
+    setResult(operationResult);
+    clearNumbers();
   };
 
   return (
     <div className='calculator'>
       <input
         placeholder='Number 1'
+        data-testid='number-1-input'
         type='number'
         value={number1}
         onChange={(e) => setNumber1(e.target.value)}
@@ -73,6 +65,7 @@ export default function Calculator() {
 
       <input
         placeholder='Number 2'
+        data-testid='number-2-input'
         type='number'
         value={number2}
         onChange={(e) => setNumber2(e.target.value)}
@@ -81,22 +74,29 @@ export default function Calculator() {
       <select
         value={selectedOperation}
         onChange={(e) => setSelectedOperation(e.target.value as Operations)}
+        data-testid='operation-select'
       >
         {OperationsOptions.map((option) => (
-          <option value={option.value} key={option.value}>
+          <option
+            value={option.value}
+            key={option.value}
+            data-testid={`select-option-${option.value}`}
+          >
             {option.label}
           </option>
         ))}
       </select>
 
-      <button onClick={handleCalculate}>Calculate</button>
+      <button onClick={handleCalculate} data-testid='calculate-button'>
+        Calculate
+      </button>
 
       {result ? (
         <h2>
-          Result: <span>{result}</span>
+          Result: <span data-testid='result'>{result}</span>
         </h2>
       ) : (
-        <h2>No result for now</h2>
+        <h2 data-testid='no-results'>No results for now</h2>
       )}
     </div>
   );
