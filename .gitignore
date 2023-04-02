@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# files to help in the tutorial
+introduction.md
+roadmap.md
