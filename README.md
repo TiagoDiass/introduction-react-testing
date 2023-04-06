@@ -4,7 +4,7 @@
   </h1>
   
   <h4 align="center">
-    Source code presented on my video on an introduction to automated testing in React applications
+    Source code presented on my video series on an introduction to automated testing in React applications
   </h4>
  </div>
 
@@ -18,9 +18,9 @@ I have separate this branch for people who want to start following my full video
   - basic syntax of tests in Javascript/Typescript projects
   - how to test React components (we'll see that by testing 2 simple components)
 
-### [Click here to check the video](https://www.google.com)
+### [Click here to check the videos playlist](https://www.google.com)
 
-If you want to follow the video coding with me, start your project from here. Just follow the steps below:
+If you want to follow the video series coding with me, start your project from here. Just follow the steps below:
 
 assuming you have [Yarn](https://yarnpkg.com/) or [NPM](https://www.npmjs.com/) installed in your computer:
 
