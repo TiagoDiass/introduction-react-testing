@@ -1,6 +1,6 @@
 <div align='center'>
   <h1>
-    Automated testing introduction :test_tube:
+    Introduction to automated testing in React :test_tube:
   </h1>
   
   <h4 align="center">
@@ -29,10 +29,10 @@ assuming you have [Yarn](https://yarnpkg.com/) or [NPM](https://www.npmjs.com/) 
 
 ```
 # Clone the repository in this specific branch
-$ git clone --branch starter https://github.com/TiagoDiass/introduction-automated-testing.git
+$ git clone --branch starter https://github.com/TiagoDiass/introduction-react-testing.git
 
 # Enter the project folder after you cloned it
-$ cd introduction-automated-testing
+$ cd introduction-react-testing
 
 # Install the dependencies with Yarn or NPM
 $ yarn install
@@ -43,7 +43,7 @@ $ npm install
 If you want to upload this code to a Github repository later, follow the steps below:
 
 ```
-# Assuming you are inside the introduction-automated-testing folder, still in your terminal
+# Assuming you are inside the introduction-react-testing folder, still in your terminal
 
 # Delete the .git folder so you can commit all the code yourself and upload it to Github later
 # Note: rm is a command for Unix based terminals, use the second option if you're on Windows
