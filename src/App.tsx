@@ -9,6 +9,9 @@ function App() {
   return (
     <div className='App'>
       <h1>Tests introduction</h1>
+
+      <p>Use these buttons below to change the current component</p>
+
       <div className='components'>
         <button onClick={() => setCurrentComponent('counter')}>Counter</button>
         <button onClick={() => setCurrentComponent('calculator')}>
