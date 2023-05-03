@@ -20,8 +20,8 @@ I have separate this repo for people who want to start following my full video o
 
 ### [Click here to check the first video](https://youtu.be/hm6RHlOBNcY)
 
-If you want to follow the video series coding with me, start your project from here. Just go to the starter branch by (clicking here)[https://github.com/TiagoDiass/introduction-react-testing/tree/starter]
-and follow the instructions written there:
+If you want to follow the video series coding with me, start your project from here. Just go to the starter branch by [clicking here](https://github.com/TiagoDiass/introduction-react-testing/tree/starter)
+and follow the instructions written there.
 
 :wave: [Get in touch!](https://www.linkedin.com/in/tiagodiass)
 
