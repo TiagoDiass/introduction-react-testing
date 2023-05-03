@@ -18,7 +18,7 @@ I have separate this branch for people who want to start following my full video
   - basic syntax of tests in Javascript/Typescript projects
   - how to test React components (we'll see that by testing 2 simple components)
 
-### [Click here to check the videos playlist](https://www.google.com)
+### [Click here to check the first video](https://youtu.be/hm6RHlOBNcY)
 
 If you want to follow the video series coding with me, start your project from here. Just follow the steps below:
 
